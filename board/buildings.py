@@ -25,3 +25,10 @@ class City(Abode):
 class Road(Building):
     def __init__(self, owner):
         super.__init__(self, owner, "Road")
+
+class Point:
+    def __init__(self, abode, position, n1, n2, n3):
+        self.abode = abode
+        self.n1 = n1
+        self.n2 = n2
+        self.n3 = n3

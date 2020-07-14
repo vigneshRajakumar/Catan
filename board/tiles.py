@@ -75,7 +75,8 @@ class Desert(Tile):
         return "de"
 
 class GameTile:
-    def __init__(self, number_label, tile, points):
+    def __init__(self, number_label, tile, points, position):
         self.number_label = number_label
         self.tile = tile
         self.points = points
+        self.position = position

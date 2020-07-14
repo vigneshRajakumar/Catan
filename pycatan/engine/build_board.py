@@ -1,5 +1,11 @@
 import random
-import tiles
+from board.tiles import Fields
+from board.tiles import Forest
+from board.tiles import Desert
+from board.tiles import Mountain
+from board.tiles import Hills
+from board.tiles import Pasture
+
 
 class GameBoard:
     def __init__(self,layout):
