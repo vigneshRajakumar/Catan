@@ -1,9 +1,11 @@
 import random
+import board
+from cards.resource import resource_cards
 from board.tiles import Fields
 from board.tiles import Forest
 from board.tiles import Desert
-from board.tiles import Mountain
 from board.tiles import Hills
+from board.tiles import Mountain
 from board.tiles import Pasture
 
 
@@ -61,10 +63,7 @@ def generate_layout():
 
     return layout
 
-def main():
+def build():
     layout = generate_layout()
     game_board = GameBoard(layout)
-    game_board.show_board()
-
-main()
-        
+    game_board.show_board()        
